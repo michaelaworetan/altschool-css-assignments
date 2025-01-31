@@ -1,0 +1,199 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;600&display=swap');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Sofia Sans', sans-serif;
+  background-color: #f7fdfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Main Container Styling */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  gap: 40px;
+  background: transparent;
+}
+
+/* Header Section */
+header {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Form Section */
+section {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.row .form-group {
+  flex: 1;
+}
+
+/* Fieldset and Legend Styling */
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: 500;
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Label Styling */
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+/* Input and Select Styling */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  font-weight: 200;
+}
+
+input::placeholder {
+  font-size: 14px;
+  font-weight: 200;
+  color: #aaa;
+}
+
+input:focus,
+select:focus {
+  border-color: #00bfa6;
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #00bfa6;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #009f8c;
+}
+
+/* Terms and Conditions */
+.terms {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 20px;
+}
+
+.terms a {
+  color: #00bfa6;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  body {
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header img {
+    margin: 0 auto;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
