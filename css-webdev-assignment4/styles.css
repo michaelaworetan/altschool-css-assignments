@@ -12,7 +12,7 @@
 /* Body Styling */
 body {
   font-family: 'Sofia Sans', sans-serif;
-  background-color: #f7fdfd;
+  background-color: #f7fdfc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,6 +119,11 @@ select {
   border-radius: 5px;
   background: #fff;
   font-weight: 200;
+}
+
+#activity {
+  font-weight: 100;
+  font-size: 12px;  
 }
 
 input::placeholder {
